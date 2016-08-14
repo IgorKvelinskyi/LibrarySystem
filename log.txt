@@ -1,0 +1,1 @@
+15:49:06.479 [http-nio-8080-exec-2] ERROR UserDAO:122 - SQL error, com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'first_name' at row 2
