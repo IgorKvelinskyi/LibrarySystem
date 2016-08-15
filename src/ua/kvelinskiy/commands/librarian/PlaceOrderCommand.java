@@ -20,7 +20,7 @@ import java.util.Date;
 
 public class PlaceOrderCommand implements Command {
     private static final Logger LOGGER = Logger.getLogger(PlaceOrderCommand.class);
-    private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd") {{ setLenient(false); }};
+    private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd") {{ setLenient(false); }};
 
     @Override
     public String execute(IRequestWrapper wrapper) {
