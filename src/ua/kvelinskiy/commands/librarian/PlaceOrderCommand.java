@@ -57,8 +57,15 @@ public class PlaceOrderCommand implements Command {
                 catalogueDao.updateCatalogueStatus(idCatalogue[i], listStatus, idTime, dateIssue[i], dateReturn[i]);
                 }else{
                     session.setAttribute("requestStatus", "IncorrectDate");
+                    String path = "/jsp/librarianPages/mainLibrarianPage.jsp";
+                    return path;
                 }
             }
+        }
+        if((idStatus != null)){
+            session.setAttribute("requestStatus", "Successfully");
+        }else {
+            session.setAttribute("requestStatus", "Choose");
         }
         String path = "/jsp/librarianPages/mainLibrarianPage.jsp";
         return path;

@@ -1,1 +1,7 @@
 15:49:06.479 [http-nio-8080-exec-2] ERROR UserDAO:122 - SQL error, com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'first_name' at row 2
+11:32:53.460 [http-nio-8080-exec-9] ERROR PlaceOrderCommand:72 - Date Format error, java.text.ParseException: Unparseable date: ""
+11:52:40.557 [http-nio-8080-exec-2] ERROR PlaceOrderCommand:77 - Date Format error, java.text.ParseException: Unparseable date: ""
+11:52:54.515 [http-nio-8080-exec-6] ERROR PlaceOrderCommand:77 - Date Format error, java.text.ParseException: Unparseable date: ""
+12:02:02.467 [http-nio-8080-exec-2] ERROR PlaceOrderCommand:77 - Date Format error, java.text.ParseException: Unparseable date: ""
+12:06:02.547 [http-nio-8080-exec-9] ERROR PlaceOrderCommand:79 - Date Format error, java.text.ParseException: Unparseable date: ""
+12:07:32.441 [http-nio-8080-exec-3] ERROR PlaceOrderCommand:79 - Date Format error, java.text.ParseException: Unparseable date: ""
