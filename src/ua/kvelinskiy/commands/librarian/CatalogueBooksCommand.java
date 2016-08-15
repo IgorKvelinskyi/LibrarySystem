@@ -28,6 +28,7 @@ public class CatalogueBooksCommand implements Command {
         CatalogueDAO catalogueDao = factory.getCatalogueDAO();
         List<Catalogue> catalogueBooks = catalogueDao.getCatalogueListBooks();
         session.setAttribute("catalogueBooks", catalogueBooks);
+        session.setAttribute("requestStatus", "Choose");
         String path = "/jsp/librarianPages/catalogueBooks.jsp";
         return path;
     }

@@ -28,6 +28,7 @@ public class ListClientsCommand implements Command {
         List<User> customersList = new ArrayList<>();
         customersList.addAll(userDao.showActiveUsers());
         session.setAttribute("customersList", customersList);
+        session.setAttribute("requestStatus", "Choose");
         String path = "/jsp/librarianPages/listClients.jsp";
         return path;
     }

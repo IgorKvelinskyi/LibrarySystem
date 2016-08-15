@@ -45,7 +45,7 @@
                             <td>${booksUserListElem.getBook().title}</td>
                             <td>${booksUserListElem.getBook().author}</td>
                             <td><input type="date" name="dateIssue"  required oninvalid="this.setCustomValidity(<fmt:message key="DateIssue" bundle="${lang}"/>)" oninput="setCustomValidity('')"   value="${booksUserListElem.dateIssue}"   pattern="[0-9]{4}\-[0-9]{2}\-[0-9]{2}" size="8"/></td>
-                            <td><input type="date" name="dateReturn" value="${booksUserListElem.dateReturn}" size="8"/></td>
+                            <td><input type="date" name="dateReturn" required oninvalid="this.setCustomValidity(<fmt:message key="DateReturn" bundle="${lang}"/>)" oninput="setCustomValidity('')"   value="${booksUserListElem.dateReturn}" pattern="[0-9]{4}\-[0-9]{2}\-[0-9]{2}" size="8"/></td>
                             <td>
                                     <input type="hidden" name="idCatal" value="${booksUserListElem.id}"/> <fmt:message key="${booksUserListElem.status}" bundle="${lang}"/>
                             </td>

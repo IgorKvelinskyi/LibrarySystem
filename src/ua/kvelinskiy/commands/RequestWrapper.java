@@ -1,10 +1,8 @@
 package ua.kvelinskiy.commands;
 
 import ua.kvelinskiy.commands.interfaces.IRequestWrapper;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.*;
 
 /**
  * The RequestWrapper class responds for isolation of almost all methods of
@@ -15,7 +13,7 @@ import java.util.*;
 
 public class RequestWrapper implements IRequestWrapper {
     private HttpServletRequest request;
-    String [] strings;
+    private String [] strings;
 
     public RequestWrapper(HttpServletRequest request) {
         this.request = request;
